@@ -1,4 +1,4 @@
-package fiap.com.br.dwdapplication;
+package com.br.dwdimports;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("fiap.com.br.dwdapplication", appContext.getPackageName());
+        assertEquals("com.br.dwdimports", appContext.getPackageName());
     }
 }

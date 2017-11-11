@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DWD Imports</string>
+    <string name="facebook_app_id">143453059713431</string>
+    <string name="fb_login_protocol_scheme">fb143453059713431</string>
+
 </resources>
