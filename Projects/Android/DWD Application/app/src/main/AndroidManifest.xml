@@ -44,7 +44,11 @@
             </intent-filter>
         </activity>
         <activity android:name="fiap.com.br.dwdapplication.InicioAppActivity" />
-        <activity android:name=".InicioAppActivity"></activity>
+        <activity
+            android:name=".MenuInicioActivity"
+            android:label="@string/title_activity_menu_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CadastroActivity"></activity>
     </application>
 
 </manifest>

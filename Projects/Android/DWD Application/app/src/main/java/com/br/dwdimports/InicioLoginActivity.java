@@ -16,7 +16,7 @@ import com.facebook.login.widget.LoginButton;
 
 public class InicioLoginActivity extends AppCompatActivity {
 
-    private TextView txtStatus;
+
     private LoginButton loginButton;
     private CallbackManager callbackManager;
 
@@ -33,7 +33,6 @@ public class InicioLoginActivity extends AppCompatActivity {
 
     private void initializeControls(){
         callbackManager = CallbackManager.Factory.create();
-        txtStatus = (TextView) findViewById(R.id.txtStatus);
         loginButton = (LoginButton) findViewById(R.id.login_button);
 
     }
@@ -42,18 +41,18 @@ public class InicioLoginActivity extends AppCompatActivity {
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Intent intent = new Intent(InicioLoginActivity.this, InicioAppActivity.class);
+                Intent intent = new Intent(InicioLoginActivity.this, MenuInicioActivity.class);
                 startActivity(intent);
             }
 
             @Override
             public void onCancel() {
-                txtStatus.setText("Login Cancel");
+
             }
 
             @Override
             public void onError(FacebookException error) {
-                txtStatus.setText("Login Error" + error.getMessage());
+
             }
         });
     }
